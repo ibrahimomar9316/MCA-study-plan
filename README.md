@@ -13,7 +13,7 @@ An interactive 8-day study plan for the MCA (Compiler Architecture) exam, focusi
 
 ## Usage
 
-1. Visit the study plan at [your-github-username.github.io/mca-study-plan](https://your-github-username.github.io/mca-study-plan)
+1. Visit the study plan at [ibrahimomar9316.github.io/mca-study-plan](https://ibrahimomar9316.github.io/mca-study-plan)
 2. Click on any concept to see detailed explanations
 3. Track your progress using the checkboxes
 4. Your progress will be saved automatically
