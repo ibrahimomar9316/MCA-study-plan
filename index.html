@@ -47,7 +47,7 @@
                 </ul>
             </div>
         </div>
-    </section>
+        </section>
 
     <section id="schedule" class="section">
         <h2>8-Day Study Schedule</h2>
@@ -186,7 +186,8 @@
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day2-morning"> Mark as completed
+                                        <input type="checkbox" data-day="2" data-session="morning">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -194,39 +195,31 @@
                         <div class="session">
                             <h4>Afternoon (13:00 - 17:00)</h4>
                             <div class="session-content">
-                                <p><strong>13:00 - 15:00:</strong> Memory Systems</p>
+                                <p><strong>13:00 - 15:00:</strong> Advanced Memory Systems</p>
                                 <ul>
-                                    <li>DRAM Organization (40 min)
-                                        <ul>
-                                            <li>Memory cells and arrays</li>
-                                            <li>Address decoding</li>
-                                            <li>Read/write operations</li>
-                                        </ul>
+                                    <li>DRAM Organization
+                                        <div class="reference">
+                                            <a href="Lectures/lecture5.pdf" target="_blank">Lecture 5: DRAM Organization</a>
+                                            <span class="file-info">(PDF, 28 pages)</span>
+                                        </div>
                                     </li>
-                                    <li>Memory Controllers (40 min)
-                                        <ul>
-                                            <li>Address mapping</li>
-                                            <li>Request scheduling</li>
-                                            <li>Power management</li>
-                                        </ul>
+                                    <li>Memory Controllers
+                                        <div class="reference">
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=201" target="_blank">Chapter 2.6-2.7</a>
+                                            <span class="file-info">(Book pages 201-245)</span>
+                                        </div>
                                     </li>
-                                    <li>Memory Technologies (40 min)
-                                        <ul>
-                                            <li>DDR, DDR2, DDR3, DDR4</li>
-                                            <li>GDDR for graphics</li>
-                                            <li>HBM (High Bandwidth Memory)</li>
-                                        </ul>
+                                    <li>Memory Technologies
+                                        <div class="reference">
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=246" target="_blank">Chapter 2.8</a>
+                                            <span class="file-info">(Book pages 246-260)</span>
+                                        </div>
                                     </li>
-                                </ul>
-                                <p><strong>15:00 - 17:00:</strong> Break and Review</p>
-                                <ul>
-                                    <li>15:00 - 15:30: Break</li>
-                                    <li>15:30 - 16:30: Review key concepts</li>
-                                    <li>16:30 - 17:00: Prepare for evening session</li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day2-afternoon"> Mark as completed
+                                        <input type="checkbox" data-day="2" data-session="afternoon">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -248,11 +241,17 @@
                                             <span class="file-info">(PDF, 5 examples)</span>
                                         </div>
                                     </li>
-                                    <li>Review Key Concepts</li>
+                                    <li>Review Key Concepts
+                                        <div class="reference">
+                                            <a href="Review/memory_review.pdf" target="_blank">Memory Systems Review Guide</a>
+                                            <span class="file-info">(PDF, 15 pages)</span>
+                                        </div>
+                                    </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day2-evening"> Mark as completed
+                                        <input type="checkbox" data-day="2" data-session="evening">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -273,26 +272,27 @@
                                 <ul>
                                     <li>Pipelining Fundamentals
                                         <div class="reference">
-                                            <a href="Lectures/lecture5.pdf" target="_blank">Lecture 5: Pipelining</a>
+                                            <a href="Lectures/lecture6.pdf" target="_blank">Lecture 6: Pipelining</a>
                                             <span class="file-info">(PDF, 30 pages)</span>
                                         </div>
                                     </li>
                                     <li>Hazards and Solutions
                                         <div class="reference">
-                                            <a href="MCA Course (chapters and sections to learn).pdf#page=201" target="_blank">Chapter 3.1-3.3</a>
-                                            <span class="file-info">(Book pages 201-245)</span>
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=261" target="_blank">Chapter 3.1-3.3</a>
+                                            <span class="file-info">(Book pages 261-305)</span>
                                         </div>
                                     </li>
                                     <li>Branch Prediction
                                         <div class="reference">
-                                            <a href="MCA Course (chapters and sections to learn).pdf#page=246" target="_blank">Chapter 3.4-3.5</a>
-                                            <span class="file-info">(Book pages 246-290)</span>
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=306" target="_blank">Chapter 3.4-3.5</a>
+                                            <span class="file-info">(Book pages 306-350)</span>
                                         </div>
                                     </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day3-morning"> Mark as completed
+                                        <input type="checkbox" data-day="3" data-session="morning">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -304,26 +304,27 @@
                                 <ul>
                                     <li>Multiple Issue
                                         <div class="reference">
-                                            <a href="Lectures/lecture6.pdf" target="_blank">Lecture 6: Multiple Issue</a>
+                                            <a href="Lectures/lecture7.pdf" target="_blank">Lecture 7: Multiple Issue</a>
                                             <span class="file-info">(PDF, 28 pages)</span>
                                         </div>
                                     </li>
                                     <li>Dynamic Scheduling
                                         <div class="reference">
-                                            <a href="MCA Course (chapters and sections to learn).pdf#page=291" target="_blank">Chapter 3.6-3.7</a>
-                                            <span class="file-info">(Book pages 291-335)</span>
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=351" target="_blank">Chapter 3.6-3.7</a>
+                                            <span class="file-info">(Book pages 351-395)</span>
                                         </div>
                                     </li>
                                     <li>Speculation
                                         <div class="reference">
-                                            <a href="MCA Course (chapters and sections to learn).pdf#page=336" target="_blank">Chapter 3.8</a>
-                                            <span class="file-info">(Book pages 336-360)</span>
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=396" target="_blank">Chapter 3.8</a>
+                                            <span class="file-info">(Book pages 396-420)</span>
                                         </div>
                                     </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day3-afternoon"> Mark as completed
+                                        <input type="checkbox" data-day="3" data-session="afternoon">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -345,11 +346,17 @@
                                             <span class="file-info">(PDF, 6 problems)</span>
                                         </div>
                                     </li>
-                                    <li>Review Key Concepts</li>
+                                    <li>Review Key Concepts
+                                        <div class="reference">
+                                            <a href="Review/ilp_review.pdf" target="_blank">ILP Review Guide</a>
+                                            <span class="file-info">(PDF, 15 pages)</span>
+                                        </div>
+                                    </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day3-evening"> Mark as completed
+                                        <input type="checkbox" data-day="3" data-session="evening">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -370,26 +377,27 @@
                                 <ul>
                                     <li>Vector Processing
                                         <div class="reference">
-                                            <a href="Lectures/lecture7.pdf" target="_blank">Lecture 7: Vector Processing</a>
+                                            <a href="Lectures/lecture8.pdf" target="_blank">Lecture 8: Vector Processing</a>
                                             <span class="file-info">(PDF, 32 pages)</span>
                                         </div>
                                     </li>
                                     <li>SIMD Architectures
                                         <div class="reference">
-                                            <a href="MCA Course (chapters and sections to learn).pdf#page=361" target="_blank">Chapter 4.1-4.3</a>
-                                            <span class="file-info">(Book pages 361-405)</span>
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=421" target="_blank">Chapter 4.1-4.3</a>
+                                            <span class="file-info">(Book pages 421-465)</span>
                                         </div>
                                     </li>
                                     <li>Vector Extensions
                                         <div class="reference">
-                                            <a href="MCA Course (chapters and sections to learn).pdf#page=406" target="_blank">Chapter 4.4-4.5</a>
-                                            <span class="file-info">(Book pages 406-450)</span>
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=466" target="_blank">Chapter 4.4-4.5</a>
+                                            <span class="file-info">(Book pages 466-510)</span>
                                         </div>
                                     </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day4-morning"> Mark as completed
+                                        <input type="checkbox" data-day="4" data-session="morning">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -401,26 +409,27 @@
                                 <ul>
                                     <li>GPU Architecture
                                         <div class="reference">
-                                            <a href="Lectures/lecture8.pdf" target="_blank">Lecture 8: GPU Architecture</a>
+                                            <a href="Lectures/lecture9.pdf" target="_blank">Lecture 9: GPU Architecture</a>
                                             <span class="file-info">(PDF, 35 pages)</span>
                                         </div>
                                     </li>
                                     <li>CUDA Basics
                                         <div class="reference">
-                                            <a href="MCA Course (chapters and sections to learn).pdf#page=451" target="_blank">Chapter 4.6-4.7</a>
-                                            <span class="file-info">(Book pages 451-495)</span>
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=511" target="_blank">Chapter 4.6-4.7</a>
+                                            <span class="file-info">(Book pages 511-555)</span>
                                         </div>
                                     </li>
                                     <li>Memory Hierarchy
                                         <div class="reference">
-                                            <a href="MCA Course (chapters and sections to learn).pdf#page=496" target="_blank">Chapter 4.8</a>
-                                            <span class="file-info">(Book pages 496-520)</span>
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=556" target="_blank">Chapter 4.8</a>
+                                            <span class="file-info">(Book pages 556-580)</span>
                                         </div>
                                     </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day4-afternoon"> Mark as completed
+                                        <input type="checkbox" data-day="4" data-session="afternoon">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -442,11 +451,17 @@
                                             <span class="file-info">(PDF, 6 problems)</span>
                                         </div>
                                     </li>
-                                    <li>Review Key Concepts</li>
+                                    <li>Review Key Concepts
+                                        <div class="reference">
+                                            <a href="Review/dlp_review.pdf" target="_blank">DLP Review Guide</a>
+                                            <span class="file-info">(PDF, 15 pages)</span>
+                                        </div>
+                                    </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day4-evening"> Mark as completed
+                                        <input type="checkbox" data-day="4" data-session="evening">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -467,26 +482,27 @@
                                 <ul>
                                     <li>Multithreading
                                         <div class="reference">
-                                            <a href="Lectures/lecture9.pdf" target="_blank">Lecture 9: Multithreading</a>
+                                            <a href="Lectures/lecture10.pdf" target="_blank">Lecture 10: Multithreading</a>
                                             <span class="file-info">(PDF, 30 pages)</span>
                                         </div>
                                     </li>
                                     <li>Thread Models
                                         <div class="reference">
-                                            <a href="MCA Course (chapters and sections to learn).pdf#page=521" target="_blank">Chapter 5.1-5.3</a>
-                                            <span class="file-info">(Book pages 521-565)</span>
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=581" target="_blank">Chapter 5.1-5.3</a>
+                                            <span class="file-info">(Book pages 581-625)</span>
                                         </div>
                                     </li>
                                     <li>Cache Coherence
                                         <div class="reference">
-                                            <a href="MCA Course (chapters and sections to learn).pdf#page=566" target="_blank">Chapter 5.4-5.5</a>
-                                            <span class="file-info">(Book pages 566-610)</span>
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=626" target="_blank">Chapter 5.4-5.5</a>
+                                            <span class="file-info">(Book pages 626-670)</span>
                                         </div>
                                     </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day5-morning"> Mark as completed
+                                        <input type="checkbox" data-day="5" data-session="morning">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -496,13 +512,29 @@
                             <div class="session-content">
                                 <p><strong>13:00 - 15:00:</strong> Advanced TLP</p>
                                 <ul>
-                                    <li>Multicore Systems</li>
-                                    <li>Synchronization</li>
-                                    <li>Memory Consistency</li>
+                                    <li>Multicore Systems
+                                        <div class="reference">
+                                            <a href="Lectures/lecture11.pdf" target="_blank">Lecture 11: Multicore Systems</a>
+                                            <span class="file-info">(PDF, 28 pages)</span>
+                                        </div>
+                                    </li>
+                                    <li>Synchronization
+                                        <div class="reference">
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=671" target="_blank">Chapter 5.6-5.7</a>
+                                            <span class="file-info">(Book pages 671-715)</span>
+                                        </div>
+                                    </li>
+                                    <li>Memory Consistency
+                                        <div class="reference">
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=716" target="_blank">Chapter 5.8</a>
+                                            <span class="file-info">(Book pages 716-740)</span>
+                                        </div>
+                                    </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day5-afternoon"> Mark as completed
+                                        <input type="checkbox" data-day="5" data-session="afternoon">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -512,13 +544,29 @@
                             <div class="session-content">
                                 <p><strong>18:00 - 20:00:</strong> Practice Problems</p>
                                 <ul>
-                                    <li>Threading Exercises</li>
-                                    <li>Cache Coherence</li>
-                                    <li>Review Key Concepts</li>
+                                    <li>Threading Exercises
+                                        <div class="reference">
+                                            <a href="Practice exam/threading_exercises.pdf" target="_blank">Threading Practice Problems</a>
+                                            <span class="file-info">(PDF, 7 problems)</span>
+                                        </div>
+                                    </li>
+                                    <li>Cache Coherence
+                                        <div class="reference">
+                                            <a href="Practice exam/coherence_exercises.pdf" target="_blank">Cache Coherence Problems</a>
+                                            <span class="file-info">(PDF, 5 problems)</span>
+                                        </div>
+                                    </li>
+                                    <li>Review Key Concepts
+                                        <div class="reference">
+                                            <a href="Review/tlp_review.pdf" target="_blank">TLP Review Guide</a>
+                                            <span class="file-info">(PDF, 15 pages)</span>
+                                        </div>
+                                    </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day5-evening"> Mark as completed
+                                        <input type="checkbox" data-day="5" data-session="evening">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -537,13 +585,29 @@
                             <div class="session-content">
                                 <p><strong>8:00 - 10:00:</strong> Chapter 6: WSC Basics</p>
                                 <ul>
-                                    <li>Data Center Architecture</li>
-                                    <li>Power Efficiency</li>
-                                    <li>Cooling Systems</li>
+                                    <li>Data Center Architecture
+                                        <div class="reference">
+                                            <a href="Lectures/lecture12.pdf" target="_blank">Lecture 12: Data Center Architecture</a>
+                                            <span class="file-info">(PDF, 33 pages)</span>
+                                        </div>
+                                    </li>
+                                    <li>Power Efficiency
+                                        <div class="reference">
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=741" target="_blank">Chapter 6.1-6.3</a>
+                                            <span class="file-info">(Book pages 741-785)</span>
+                                        </div>
+                                    </li>
+                                    <li>Cooling Systems
+                                        <div class="reference">
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=786" target="_blank">Chapter 6.4-6.5</a>
+                                            <span class="file-info">(Book pages 786-830)</span>
+                                        </div>
+                                    </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day6-morning"> Mark as completed
+                                        <input type="checkbox" data-day="6" data-session="morning">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -553,13 +617,29 @@
                             <div class="session-content">
                                 <p><strong>13:00 - 15:00:</strong> Advanced WSC</p>
                                 <ul>
-                                    <li>Network Architecture</li>
-                                    <li>Storage Systems</li>
-                                    <li>Fault Tolerance</li>
+                                    <li>Network Architecture
+                                        <div class="reference">
+                                            <a href="Lectures/lecture13.pdf" target="_blank">Lecture 13: Network Architecture</a>
+                                            <span class="file-info">(PDF, 31 pages)</span>
+                                        </div>
+                                    </li>
+                                    <li>Storage Systems
+                                        <div class="reference">
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=831" target="_blank">Chapter 6.6-6.7</a>
+                                            <span class="file-info">(Book pages 831-875)</span>
+                                        </div>
+                                    </li>
+                                    <li>Fault Tolerance
+                                        <div class="reference">
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=876" target="_blank">Chapter 6.8</a>
+                                            <span class="file-info">(Book pages 876-900)</span>
+                                        </div>
+                                    </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day6-afternoon"> Mark as completed
+                                        <input type="checkbox" data-day="6" data-session="afternoon">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -569,13 +649,29 @@
                             <div class="session-content">
                                 <p><strong>18:00 - 20:00:</strong> Practice Problems</p>
                                 <ul>
-                                    <li>WSC Design</li>
-                                    <li>Power Calculations</li>
-                                    <li>Review Key Concepts</li>
+                                    <li>WSC Design
+                                        <div class="reference">
+                                            <a href="Practice exam/wsc_exercises.pdf" target="_blank">WSC Design Problems</a>
+                                            <span class="file-info">(PDF, 6 problems)</span>
+                                        </div>
+                                    </li>
+                                    <li>Power Calculations
+                                        <div class="reference">
+                                            <a href="Practice exam/power_exercises.pdf" target="_blank">Power Calculation Problems</a>
+                                            <span class="file-info">(PDF, 4 problems)</span>
+                                        </div>
+                                    </li>
+                                    <li>Review Key Concepts
+                                        <div class="reference">
+                                            <a href="Review/wsc_review.pdf" target="_blank">WSC Review Guide</a>
+                                            <span class="file-info">(PDF, 15 pages)</span>
+                                        </div>
+                                    </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day6-evening"> Mark as completed
+                                        <input type="checkbox" data-day="6" data-session="evening">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -594,13 +690,29 @@
                             <div class="session-content">
                                 <p><strong>8:00 - 10:00:</strong> Chapter 7: DSA Basics</p>
                                 <ul>
-                                    <li>Neural Networks</li>
-                                    <li>AI Accelerators</li>
-                                    <li>Specialized Hardware</li>
+                                    <li>Neural Networks
+                                        <div class="reference">
+                                            <a href="Lectures/lecture14.pdf" target="_blank">Lecture 14: Neural Networks</a>
+                                            <span class="file-info">(PDF, 34 pages)</span>
+                                        </div>
+                                    </li>
+                                    <li>AI Accelerators
+                                        <div class="reference">
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=901" target="_blank">Chapter 7.1-7.3</a>
+                                            <span class="file-info">(Book pages 901-945)</span>
+                                        </div>
+                                    </li>
+                                    <li>Specialized Hardware
+                                        <div class="reference">
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=946" target="_blank">Chapter 7.4-7.5</a>
+                                            <span class="file-info">(Book pages 946-990)</span>
+                                        </div>
+                                    </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day7-morning"> Mark as completed
+                                        <input type="checkbox" data-day="7" data-session="morning">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -610,13 +722,29 @@
                             <div class="session-content">
                                 <p><strong>13:00 - 15:00:</strong> Advanced DSA</p>
                                 <ul>
-                                    <li>Custom Architectures</li>
-                                    <li>Performance Optimization</li>
-                                    <li>Future Trends</li>
+                                    <li>Custom Architectures
+                                        <div class="reference">
+                                            <a href="Lectures/lecture15.pdf" target="_blank">Lecture 15: Custom Architectures</a>
+                                            <span class="file-info">(PDF, 29 pages)</span>
+                                        </div>
+                                    </li>
+                                    <li>Performance Optimization
+                                        <div class="reference">
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=991" target="_blank">Chapter 7.6-7.7</a>
+                                            <span class="file-info">(Book pages 991-1035)</span>
+                                        </div>
+                                    </li>
+                                    <li>Future Trends
+                                        <div class="reference">
+                                            <a href="MCA Course (chapters and sections to learn).pdf#page=1036" target="_blank">Chapter 7.8</a>
+                                            <span class="file-info">(Book pages 1036-1060)</span>
+                                        </div>
+                                    </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day7-afternoon"> Mark as completed
+                                        <input type="checkbox" data-day="7" data-session="afternoon">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -626,13 +754,29 @@
                             <div class="session-content">
                                 <p><strong>18:00 - 20:00:</strong> Practice Problems</p>
                                 <ul>
-                                    <li>DSA Design</li>
-                                    <li>Performance Analysis</li>
-                                    <li>Review Key Concepts</li>
+                                    <li>DSA Design
+                                        <div class="reference">
+                                            <a href="Practice exam/dsa_exercises.pdf" target="_blank">DSA Design Problems</a>
+                                            <span class="file-info">(PDF, 5 problems)</span>
+                                        </div>
+                                    </li>
+                                    <li>Performance Analysis
+                                        <div class="reference">
+                                            <a href="Practice exam/performance_exercises.pdf" target="_blank">Performance Analysis Problems</a>
+                                            <span class="file-info">(PDF, 4 problems)</span>
+                                        </div>
+                                    </li>
+                                    <li>Review Key Concepts
+                                        <div class="reference">
+                                            <a href="Review/dsa_review.pdf" target="_blank">DSA Review Guide</a>
+                                            <span class="file-info">(PDF, 15 pages)</span>
+                                        </div>
+                                    </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day7-evening"> Mark as completed
+                                        <input type="checkbox" data-day="7" data-session="evening">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -651,13 +795,29 @@
                             <div class="session-content">
                                 <p><strong>8:00 - 10:00:</strong> Comprehensive Review</p>
                                 <ul>
-                                    <li>Chapters 1-3 Review</li>
-                                    <li>Key Concepts</li>
-                                    <li>Common Pitfalls</li>
+                                    <li>Chapters 1-3 Review
+                                        <div class="reference">
+                                            <a href="Review/chapters1-3_review.pdf" target="_blank">Chapters 1-3 Review Guide</a>
+                                            <span class="file-info">(PDF, 40 pages)</span>
+                                        </div>
+                                    </li>
+                                    <li>Key Concepts
+                                        <div class="reference">
+                                            <a href="Review/key_concepts.pdf" target="_blank">Key Concepts Summary</a>
+                                            <span class="file-info">(PDF, 25 pages)</span>
+                                        </div>
+                                    </li>
+                                    <li>Common Pitfalls
+                                        <div class="reference">
+                                            <a href="Review/common_pitfalls.pdf" target="_blank">Common Pitfalls Guide</a>
+                                            <span class="file-info">(PDF, 15 pages)</span>
+                                        </div>
+                                    </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day8-morning"> Mark as completed
+                                        <input type="checkbox" data-day="8" data-session="morning">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -667,13 +827,29 @@
                             <div class="session-content">
                                 <p><strong>13:00 - 15:00:</strong> Practice Session</p>
                                 <ul>
-                                    <li>Sample Problems</li>
-                                    <li>Time Management</li>
-                                    <li>Exam Strategies</li>
+                                    <li>Sample Problems
+                                        <div class="reference">
+                                            <a href="Practice exam/sample_exam.pdf" target="_blank">Sample Exam Problems</a>
+                                            <span class="file-info">(PDF, 12 problems)</span>
+                                        </div>
+                                    </li>
+                                    <li>Time Management
+                                        <div class="reference">
+                                            <a href="Review/time_management.pdf" target="_blank">Time Management Guide</a>
+                                            <span class="file-info">(PDF, 10 pages)</span>
+                                        </div>
+                                    </li>
+                                    <li>Exam Strategies
+                                        <div class="reference">
+                                            <a href="Review/exam_strategies.pdf" target="_blank">Exam Strategies Guide</a>
+                                            <span class="file-info">(PDF, 15 pages)</span>
+                                        </div>
+                                    </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day8-afternoon"> Mark as completed
+                                        <input type="checkbox" data-day="8" data-session="afternoon">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -683,13 +859,29 @@
                             <div class="session-content">
                                 <p><strong>18:00 - 20:00:</strong> Final Review</p>
                                 <ul>
-                                    <li>Weak Areas Focus</li>
-                                    <li>Quick Tips</li>
-                                    <li>Exam Preparation</li>
+                                    <li>Weak Areas Focus
+                                        <div class="reference">
+                                            <a href="Review/weak_areas.pdf" target="_blank">Weak Areas Review Guide</a>
+                                            <span class="file-info">(PDF, 20 pages)</span>
+                                        </div>
+                                    </li>
+                                    <li>Quick Tips
+                                        <div class="reference">
+                                            <a href="Review/quick_tips.pdf" target="_blank">Quick Tips Guide</a>
+                                            <span class="file-info">(PDF, 10 pages)</span>
+                                        </div>
+                                    </li>
+                                    <li>Exam Preparation
+                                        <div class="reference">
+                                            <a href="Review/exam_prep.pdf" target="_blank">Final Exam Preparation Guide</a>
+                                            <span class="file-info">(PDF, 15 pages)</span>
+                                        </div>
+                                    </li>
                                 </ul>
                                 <div class="progress-tracker">
                                     <label>
-                                        <input type="checkbox" data-session="day8-evening"> Mark as completed
+                                        <input type="checkbox" data-day="8" data-session="evening">
+                                        Mark as completed
                                     </label>
                                 </div>
                             </div>
@@ -699,7 +891,7 @@
             </div>
 
         </div>
-    </section>
+        </section>
 
     <section id="tips">
         <h2>Key Tips for 6/10 Score</h2>
@@ -742,7 +934,7 @@
                 </ul>
             </div>
         </div>
-    </section>
+        </section>
 
     <section id="resources">
         <h2>Resources</h2>
@@ -757,7 +949,7 @@
                 </ul>
             </div>
         </div>
-    </section>
+        </section>
 
     <div class="progress-summary">
         <h3>Overall Progress</h3>
