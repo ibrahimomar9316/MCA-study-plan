@@ -13,34 +13,54 @@
             <p>8-Day Intensive Study Schedule</p>
         </header>
 
-        <section class="prior-knowledge">
+        <section id="overview">
             <h2>Prior Knowledge Check</h2>
-            
-            <div class="card">
-                <h3>Must Have</h3>
-                <ul>
-                    <li>Basic binary numbers and operations</li>
-                    <li>Simple CPU components and their functions</li>
-                    <li>Basic memory types and hierarchy</li>
-                </ul>
-                <div class="references">
-                    <a href="https://canvas.tudelft.nl/courses/15737/pages/lecture-1-introduction-to-computer-architecture">Lecture 1: Introduction to Computer Architecture</a>
-                    <a href="https://canvas.tudelft.nl/courses/15737/pages/lecture-2-basic-cpu-components">Lecture 2: Basic CPU Components</a>
-                    <a href="https://canvas.tudelft.nl/courses/15737/pages/lecture-3-memory-hierarchy">Lecture 3: Memory Hierarchy</a>
+            <div class="content-grid">
+                <div class="card">
+                    <h3>Must Have (Review if missing)</h3>
+                    <ul>
+                        <li>Basic binary numbers (5 min)
+                            <div class="reference">
+                                <a href="MCA Course (chapters and sections to learn).pdf#page=1" target="_blank">Chapter 1.1-1.3</a>
+                                <span class="file-info">(Binary number systems and basic arithmetic)</span>
+                            </div>
+                        </li>
+                        <li>Simple CPU components (10 min)
+                            <div class="reference">
+                                <a href="MCA Course (chapters and sections to learn).pdf#page=1" target="_blank">Chapter 1.1-1.3</a>
+                                <span class="file-info">(Basic CPU organization and components)</span>
+                            </div>
+                        </li>
+                        <li>Basic memory types (5 min)
+                            <div class="reference">
+                                <a href="MCA Course (chapters and sections to learn).pdf#page=1" target="_blank">Chapter 2.1-2.2</a>
+                                <span class="file-info">(Memory technology and basic concepts)</span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-
-            <div class="card">
-                <h3>Nice to Have</h3>
-                <ul>
-                    <li>Assembly language basics</li>
-                    <li>Complex pipelining concepts</li>
-                    <li>Advanced cache concepts</li>
-                </ul>
-                <div class="references">
-                    <a href="https://canvas.tudelft.nl/courses/15737/pages/lecture-4-assembly-basics">Lecture 4: Assembly Language Basics</a>
-                    <a href="https://canvas.tudelft.nl/courses/15737/pages/lecture-5-pipelining">Lecture 5: Advanced Pipelining</a>
-                    <a href="https://canvas.tudelft.nl/courses/15737/pages/lecture-6-advanced-cache">Lecture 6: Advanced Cache Design</a>
+                <div class="card">
+                    <h3>Nice to Have (Don't waste time if not familiar)</h3>
+                    <ul>
+                        <li>Assembly language basics
+                            <div class="reference">
+                                <a href="MCA Course (chapters and sections to learn).pdf#page=1" target="_blank">Chapter 1.1-1.3</a>
+                                <span class="file-info">(Basic assembly concepts)</span>
+                            </div>
+                        </li>
+                        <li>Complex pipelining
+                            <div class="reference">
+                                <a href="MCA Course (chapters and sections to learn).pdf#page=1" target="_blank">Chapter 3.1-3.3</a>
+                                <span class="file-info">(Basic pipeline concepts)</span>
+                            </div>
+                        </li>
+                        <li>Advanced cache concepts
+                            <div class="reference">
+                                <a href="MCA Course (chapters and sections to learn).pdf#page=1" target="_blank">Chapter 2.1-2.3</a>
+                                <span class="file-info">(Basic cache concepts)</span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -52,11 +72,41 @@
                 <h3>Day 1: April 6</h3>
                 <div class="session">
                     <h4>Morning (9:00 - 12:00)</h4>
-                    <p>Performance Metrics and Analysis</p>
+                    <p><strong>8:00 - 10:00:</strong> Performance Metrics</p>
                     <ul>
-                        <li>Review Chapter 1.4-1.5</li>
-                        <li>Complete Exercise 1.3</li>
-                        <li>Practice problems from Lecture 1</li>
+                        <li>Lecture 1 & 2: Performance metrics
+                            <div class="reference">
+                                <a href="Lectures/lecture1.pdf" target="_blank">Lecture 1: Performance Metrics</a>
+                                <span class="file-info">(PDF, 25 pages)</span>
+                            </div>
+                        </li>
+                        <li>Book Chapter 1
+                            <div class="reference">
+                                <a href="MCA Course (chapters and sections to learn).pdf#page=1" target="_blank">Chapter 1: Fundamentals</a>
+                                <span class="file-info">(Sections 1.1-1.12)</span>
+                            </div>
+                        </li>
+                        <li>Key Exercises
+                            <div class="reference">
+                                <a href="Practice exam/chapter1_exercises.pdf" target="_blank">Exercises 1.1, 1.2, 1.4, 1.8, 1.15</a>
+                                <span class="file-info">(Performance calculations and analysis)</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <p><strong>10:00 - 12:00:</strong> Compiler Phases</p>
+                    <ul>
+                        <li>Lecture 5.1: Compiler Phases
+                            <div class="reference">
+                                <a href="Lectures/lecture5.pdf" target="_blank">Lecture 5.1: Compiler Phases</a>
+                                <span class="file-info">(PDF, 30 pages)</span>
+                            </div>
+                        </li>
+                        <li>Summary Creation
+                            <div class="reference">
+                                <a href="summaries/performance_metrics.md" target="_blank">Create Summary Page</a>
+                                <span class="file-info">(CPI, Speedup, Compiler flow)</span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="session">
@@ -74,11 +124,41 @@
                 <h3>Day 2: April 7</h3>
                 <div class="session">
                     <h4>Morning (9:00 - 12:00)</h4>
-                    <p>Cache Hierarchy and Memory Systems</p>
+                    <p><strong>8:00 - 10:00:</strong> Cache Hierarchy</p>
                     <ul>
-                        <li>Review Chapter 3.3-3.4</li>
-                        <li>Complete Exercise 3.2</li>
-                        <li>Practice cache optimization</li>
+                        <li>Lecture 3 & 4: Cache hierarchy
+                            <div class="reference">
+                                <a href="Lectures/lecture3.pdf" target="_blank">Lecture 3: Cache Basics</a>
+                                <span class="file-info">(PDF, 28 pages)</span>
+                            </div>
+                        </li>
+                        <li>Book Chapter 2
+                            <div class="reference">
+                                <a href="MCA Course (chapters and sections to learn).pdf#page=1" target="_blank">Chapter 2: Memory Hierarchy</a>
+                                <span class="file-info">(Sections 2.1-2.8)</span>
+                            </div>
+                        </li>
+                        <li>Key Exercises
+                            <div class="reference">
+                                <a href="Practice exam/chapter2_exercises.pdf" target="_blank">Exercises 2.1, 2.20, 2.22, 2.24, 2.25</a>
+                                <span class="file-info">(Cache design and analysis)</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <p><strong>10:00 - 12:00:</strong> Scanner Design</p>
+                    <ul>
+                        <li>Lecture 5.2: Scanner design
+                            <div class="reference">
+                                <a href="Lectures/lecture5.pdf" target="_blank">Lecture 5.2: Scanner Design</a>
+                                <span class="file-info">(DFA, Regex)</span>
+                            </div>
+                        </li>
+                        <li>Practice Examples
+                            <div class="reference">
+                                <a href="Practice exam/scanner_examples.pdf" target="_blank">Regex and Token Table Examples</a>
+                                <span class="file-info">(Practice problems)</span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="session">
@@ -96,11 +176,41 @@
                 <h3>Day 3: April 8</h3>
                 <div class="session">
                     <h4>Morning (9:00 - 12:00)</h4>
-                    <p>Instruction Level Parallelism (ILP)</p>
+                    <p><strong>8:00 - 10:00:</strong> ILP and Dynamic Scheduling</p>
                     <ul>
-                        <li>Review Chapter 5.3-5.4</li>
-                        <li>Complete Exercise 5.2</li>
-                        <li>Practice ILP optimization</li>
+                        <li>Lecture 5 & 6: ILP and Branch prediction
+                            <div class="reference">
+                                <a href="Lectures/lecture5.pdf" target="_blank">Lecture 5: ILP Basics</a>
+                                <span class="file-info">(PDF, 32 pages)</span>
+                            </div>
+                        </li>
+                        <li>Book Chapter 3
+                            <div class="reference">
+                                <a href="MCA Course (chapters and sections to learn).pdf#page=1" target="_blank">Chapter 3: ILP</a>
+                                <span class="file-info">(Sections 3.1-3.14)</span>
+                            </div>
+                        </li>
+                        <li>Key Exercises
+                            <div class="reference">
+                                <a href="Practice exam/chapter3_exercises.pdf" target="_blank">Exercises 3.7, 3.9, 3.10, 3.11, 3.12, 3.13</a>
+                                <span class="file-info">(ILP and scheduling problems)</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <p><strong>10:00 - 12:00:</strong> Parsers</p>
+                    <ul>
+                        <li>Lecture 6.1: Parsers
+                            <div class="reference">
+                                <a href="Lectures/lecture6.pdf" target="_blank">Lecture 6.1: Parsers</a>
+                                <span class="file-info">(PDF, 35 pages)</span>
+                            </div>
+                        </li>
+                        <li>Practice Examples
+                            <div class="reference">
+                                <a href="Practice exam/parser_examples.pdf" target="_blank">Recursive Descent Parse Examples</a>
+                                <span class="file-info">(Practice problems)</span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="session">
@@ -118,11 +228,29 @@
                 <h3>Day 4: April 9</h3>
                 <div class="session">
                     <h4>Morning (9:00 - 12:00)</h4>
-                    <p>LLVM Optimization</p>
+                    <p><strong>8:00 - 10:00:</strong> IR and LLVM</p>
                     <ul>
-                        <li>Review Chapter 7.1-7.2</li>
-                        <li>Complete Exercise 7.1</li>
-                        <li>Practice optimization passes</li>
+                        <li>Lecture 6.2: IR and LLVM/ILOC
+                            <div class="reference">
+                                <a href="Lectures/lecture6.pdf" target="_blank">Lecture 6.2: IR and LLVM</a>
+                                <span class="file-info">(PDF, 30 pages)</span>
+                            </div>
+                        </li>
+                        <li>Practice IR from C-code
+                            <div class="reference">
+                                <a href="Practice exam/ir_examples.pdf" target="_blank">IR Translation Examples</a>
+                                <span class="file-info">(C to IR practice)</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <p><strong>10:00 - 12:00:</strong> Dynamic Scheduling Review</p>
+                    <ul>
+                        <li>Speculative Execution
+                            <div class="reference">
+                                <a href="Lectures/lecture5.pdf" target="_blank">Review Dynamic Scheduling</a>
+                                <span class="file-info">(Focus on speculation)</span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="session">
