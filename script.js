@@ -496,34 +496,62 @@ function updateOverallProgress() {
     document.getElementById('progressText').textContent = `${percentage}% Complete`;
 }
 
-// Save progress to localStorage
-function saveProgress() {
-    const progress = {};
-    document.querySelectorAll('.progress-tracker').forEach(tracker => {
-        const checkbox = tracker.querySelector('input[type="checkbox"]');
-        progress[tracker.id] = checkbox.checked;
-    });
-    localStorage.setItem('studyPlanProgress', JSON.stringify(progress));
-}
+// Progress Tracking
+const totalDays = 8;
+let completedDays = 0;
 
-// Load progress from localStorage
+// Load saved progress
 function loadProgress() {
-    const savedProgress = localStorage.getItem('studyPlanProgress');
+    const savedProgress = localStorage.getItem('studyProgress');
     if (savedProgress) {
         const progress = JSON.parse(savedProgress);
-        Object.entries(progress).forEach(([sessionId, completed]) => {
-            const tracker = document.getElementById(sessionId);
-            if (tracker) {
-                const checkbox = tracker.querySelector('input[type="checkbox"]');
-                checkbox.checked = completed;
-                if (completed) {
-                    tracker.classList.add('completed');
-                }
+        progress.forEach(day => {
+            const checkbox = document.querySelector(`input[data-day="${day}"]`);
+            if (checkbox) {
+                checkbox.checked = true;
+                checkbox.closest('.progress-tracker').classList.add('completed');
+                completedDays++;
             }
         });
-        updateOverallProgress();
+        updateProgressBar();
     }
 }
+
+// Save progress
+function saveProgress() {
+    const checkboxes = document.querySelectorAll('.progress-tracker input[type="checkbox"]:checked');
+    const completedDays = Array.from(checkboxes).map(checkbox => parseInt(checkbox.dataset.day));
+    localStorage.setItem('studyProgress', JSON.stringify(completedDays));
+    updateProgressBar();
+}
+
+// Update progress bar
+function updateProgressBar() {
+    const progressFill = document.getElementById('progressFill');
+    const progressText = document.getElementById('progressText');
+    const percentage = (completedDays / totalDays) * 100;
+    
+    progressFill.style.width = `${percentage}%`;
+    progressText.textContent = `${Math.round(percentage)}% Complete`;
+}
+
+// Add event listeners to checkboxes
+document.querySelectorAll('.progress-tracker input[type="checkbox"]').forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+        const tracker = checkbox.closest('.progress-tracker');
+        if (checkbox.checked) {
+            tracker.classList.add('completed');
+            completedDays++;
+        } else {
+            tracker.classList.remove('completed');
+            completedDays--;
+        }
+        saveProgress();
+    });
+});
+
+// Load progress when page loads
+document.addEventListener('DOMContentLoaded', loadProgress);
 
 function showKnowledge(key) {
     const modal = document.getElementById('knowledgeModal');
