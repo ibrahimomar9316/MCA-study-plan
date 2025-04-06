@@ -1,160 +1,201 @@
-# MCA Exam Study Plan (8 Days)
+# MCA Study Plan - 8 Days to Success
 
-## 📚 Overview
-This study plan is designed for the MCA (Compiler Architecture) exam, focusing on Chapters 4 and 5. The plan is structured to maximize learning in 8 days, with clear daily goals and topics.
+## Prior Knowledge Check (Quick Assessment)
 
-## 🎯 Study Schedule
+### Must Have (Review if missing):
+- Basic binary numbers (5 min)
+- Simple CPU components (ALU, Control Unit, Registers) (10 min)
+- Basic memory types (SRAM vs DRAM) (5 min)
 
-### Day 1: Chapter 4 - Vector/SIMD Basics
-#### Morning Session
-- **Topic**: Vector processor calculations
-- **Key Concepts**:
-  - Performance calculations (4.13)
-  - Formula: GFLOPs/s = GHz × efficiency × cores × operations/cycle
-- **Practice**: Work through similar problems
+### Nice to Have (Don't waste time if not familiar):
+- Assembly language basics
+- Complex pipelining
+- Advanced cache concepts
 
-#### Afternoon Session
-- **Topic**: Loop dependencies
-- **Key Concepts**:
-  - GCD test (4.14)
-  - True/anti/output dependencies
-- **Practice**: Create dependency diagrams
+## 8-Day Study Schedule
 
-#### Evening Session
-- Review and practice calculations
-- Create formula reference sheet
+### Day 1: Chapter 1 - Core Concepts
+- **Morning (2 hours)**
+  - Quick Prior Knowledge Check (20 min)
+    - Binary numbers
+    - Basic CPU components
+  - Chapter 1 Core (1.5 hours)
+    - Read Sections 1.1-1.3
+    - Use Chapter 1 - solutions excerpt.pdf
+    - Focus on:
+      - Table 1.1 (Technology Trends)
+      - Basic definitions
+      - Skip complex calculations
 
-### Day 2: Chapter 4 - Advanced Topics
-#### Morning Session
-- **Topic**: Memory patterns
-- **Key Concepts**:
-  - Branch divergence
-  - Memory latency
-  - Coalesced memory access
+- **Afternoon (2 hours)**
+  - Sections 1.4-1.6
+    - Focus on trends
+    - Skip detailed formulas
+    - Practice with solutions
 
-#### Afternoon Session
-- **Topic**: Bandwidth calculations
-- **Key Concepts**:
-  - Memory bandwidth
-  - Bandwidth limitations
-- **Practice**: Work through similar problems
+- **Evening (1 hour)**
+  - Review key concepts
+  - Practice 2-3 simple problems from solutions
 
-#### Evening Session
-- Review and create quick reference notes
+### Day 2: Chapter 1 Completion & Chapter 2 Start
+- **Morning (2 hours)**
+  - Complete Chapter 1 (1 hour)
+    - Focus on "Fallacies and Pitfalls"
+    - Skip "Putting it All Together"
+  - Start Chapter 2 (1 hour)
+    - Basic memory concepts
+    - Use Chapter 2 - solutions excerpt v2.pdf
+
+- **Afternoon (2 hours)**
+  - Section 2.2
+    - Basic memory types
+    - Skip optimizations
+    - Practice with solutions
+
+- **Evening (1 hour)**
+  - Review key concepts
+  - Practice 2-3 simple problems
+
+### Day 3: Chapter 2 - Memory Basics
+- **Morning (2 hours)**
+  - Section 2.4 (Virtual Memory)
+    - Basic concepts only
+    - Skip Virtual Machines
+    - Practice with solutions
+
+- **Afternoon (2 hours)**
+  - Section 2.5
+    - Main points only
+    - Skip implementations
+    - Practice with solutions
+
+- **Evening (1 hour)**
+  - Review key concepts
+  - Practice 2-3 simple problems
+
+### Day 4: Chapter 3 - ILP Basics
+- **Morning (2 hours)**
+  - Quick Pipelining Review (20 min)
+    - Basic concepts only
+  - Sections 3.1-3.2
+    - Basic ILP concepts
+    - Use Chapter 3 - solutions excerpt.pdf
+    - Focus on simple examples
+
+- **Afternoon (2 hours)**
+  - Section 3.3
+    - Basic prediction methods
+    - Skip complex algorithms
+    - Practice with solutions
+
+- **Evening (1 hour)**
+  - Review key concepts
+  - Practice 2-3 simple problems
+
+### Day 5: Chapter 3 - Core ILP
+- **Morning (2 hours)**
+  - Sections 3.4-3.5
+    - Basic concepts only
+    - Skip complex algorithms
+    - Practice with solutions
+
+- **Afternoon (2 hours)**
+  - Section 3.6
+    - Main ideas only
+    - Skip implementations
+    - Practice with solutions
+
+- **Evening (1 hour)**
+  - Review key concepts
+  - Practice 2-3 simple problems
+
+### Day 6: Chapter 3 - Advanced Topics
+- **Morning (2 hours)**
+  - Section 3.7
+    - Basic concepts
+    - Skip complex scheduling
+    - Practice with solutions
+
+- **Afternoon (2 hours)**
+  - Section 3.8
+    - Main points only
+    - Skip algorithms
+    - Practice with solutions
+
+- **Evening (1 hour)**
+  - Review key concepts
+  - Practice 2-3 simple problems
+
+### Day 7: Review and Practice
+- **Morning (2 hours)**
+  - Chapter 1 Review
+    - Key concepts
+    - Practice with solutions
+    - Focus on simple problems
+
+- **Afternoon (2 hours)**
+  - Chapter 2 Review
+    - Key concepts
+    - Practice with solutions
+    - Focus on simple problems
+
+- **Evening (1 hour)**
+  - Chapter 3 Review
+    - Key concepts
+    - Practice with solutions
+    - Focus on simple problems
+
+### Day 8: Final Review
+- **Morning (2 hours)**
+  - Quick Review of All Chapters
+    - Key terms
+    - Basic concepts
+    - Skip complex topics
+
+- **Afternoon (2 hours)**
+  - Practice Session
+    - Focus on simple problems
+    - Use solution excerpts
+    - Skip complex calculations
+
+- **Evening (1 hour)**
+  - Final Review
+    - Key concepts
+    - Common pitfalls
+    - Simple examples
+
+## Key Tips for 6/10 Score
+
+### Focus Areas:
+- Basic concepts and definitions
+- Simple problems from solutions
+- Key terms and vocabulary
+- Main points from tables and figures
+
+### Skip Areas:
+- Complex calculations
+- Detailed implementations
+- Case studies
+- Advanced optimizations
+- Complex algorithms
+
+### Practice Strategy:
+- Use solution excerpts for problem patterns
+- Focus on simple examples
+- Skip complex problems
+- Practice 2-3 problems per topic
+
+### Time Management:
+- 5 hours study per day
+- 2-3 practice problems per evening
+- Skip complex topics
+- Focus on understanding basics
+
+## Resources
+- Book: Computer Architecture: A Quantitative Approach, 6th Edition
+- Solution excerpts for Chapters 1-3
+- Lecture materials
 - Practice problems
-
-### Day 3: Chapter 5 - Cache Coherence Basics
-#### Morning Session
-- **Topic**: Cache states
-- **Key Concepts**:
-  - Cache line states (5.1)
-  - I, S, E, M states
-- **Practice**: State transition diagrams
-
-#### Afternoon Session
-- **Topic**: Basic protocols
-- **Key Concepts**:
-  - Cache operations (5.2)
-  - Read/write operations
-- **Practice**: Protocol tracing
-
-#### Evening Session
-- Review state transitions
-- Create protocol reference sheet
-
-### Day 4: Chapter 5 - Directory Protocol
-#### Morning Session
-- **Topic**: Directory-based coherence
-- **Key Concepts**:
-  - Directory protocol (5.9)
-  - Message types
-- **Practice**: Protocol analysis
-
-#### Afternoon Session
-- **Topic**: Write-through vs write-back
-- **Key Concepts**:
-  - Protocol differences (5.23)
-  - State transitions
-- **Practice**: Compare protocols
-
-#### Evening Session
-- Review protocols
-- Create protocol comparison sheet
-
-### Day 5: Chapter 5 - Memory Consistency
-#### Morning Session
-- **Topic**: Basic consistency models
-- **Key Concepts**:
-  - Sequential consistency (5.15)
-  - Total store order
-- **Practice**: Model analysis
-
-#### Afternoon Session
-- **Topic**: Synchronization
-- **Key Concepts**:
-  - Synchronization primitives
-  - Memory barriers
-- **Practice**: Barrier implementation
-
-#### Evening Session
-- Review consistency models
-- Create model comparison sheet
-
-### Day 6: Chapter 5 - Advanced Topics
-#### Morning Session
-- **Topic**: Cache block states
-- **Key Concepts**:
-  - Valid bits (5.25)
-  - Partial block operations
-- **Practice**: State analysis
-
-#### Afternoon Session
-- **Topic**: Protocol complications
-- **Key Concepts**:
-  - Protocol issues (5.29)
-  - Deadlock prevention
-- **Practice**: Problem solving
-
-#### Evening Session
-- Review troubleshooting
-- Create problem-solving guide
-
-### Day 7: Final Review
-#### Morning Session
-- Review Chapter 4
-  - Vector/SIMD concepts
-  - Performance calculations
-  - Memory patterns
-
-#### Afternoon Session
-- Review Chapter 5
-  - Cache coherence protocols
-  - Memory consistency
-  - State transitions
-
-#### Evening Session
-- Practice problems
-- Review calculations
-- Review protocol traces
-
-### Day 8: Exam Preparation
-#### Morning Session
-- Organize materials
-  - Create final reference sheets
-  - Mark important sections
-  - Organize practice solutions
-
-#### Afternoon Session
-- Quick review
-  - Review key formulas
-  - Review protocol diagrams
-  - Review state transitions
-
-#### Evening Session
-- Rest and prepare
-  - Get good sleep
-  - Prepare materials for exam
-  - Review quick reference sheets
 
 ## 📝 Study Tips
 
