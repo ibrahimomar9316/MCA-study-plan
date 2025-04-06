@@ -115,35 +115,102 @@ section {
 }
 
 .session {
-    background: #f8f9fa;
-    border-radius: 2px;
-    padding: 8px;
-    margin-bottom: 8px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.session h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.2em;
 }
 
 .session p {
-    margin: 4px 0;
-    font-size: 14px;
+    margin: 10px 0;
+    color: #34495e;
 }
 
 .session ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 4px 0;
+    list-style: none;
+    padding-left: 20px;
 }
 
-.session ul li {
-    margin: 2px 0;
-    font-size: 13px;
-    padding-left: 16px;
+.session li {
+    margin: 8px 0;
+    color: #34495e;
     position: relative;
 }
 
-.session ul li:before {
+.session li::before {
     content: "•";
-    position: absolute;
-    left: 0;
     color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: -15px;
+}
+
+.reference {
+    margin: 5px 0 5px 20px;
+    font-size: 0.9em;
+}
+
+.reference a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.reference a:hover {
+    color: #2980b9;
+}
+
+.reference::before {
+    content: "📄";
+    margin-right: 5px;
+}
+
+.file-info {
+    color: #7f8c8d;
+    font-size: 0.85em;
+    margin-left: 5px;
+}
+
+/* Evening session specific styles */
+.session.evening {
+    border-left: 4px solid #e74c3c;
+}
+
+.session.evening h4 {
+    color: #c0392b;
+}
+
+/* Progress tracking styles */
+.progress-checkbox {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.progress-checkbox:checked + span {
+    text-decoration: line-through;
+    color: #7f8c8d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .session {
+        padding: 15px;
+    }
+    
+    .session h4 {
+        font-size: 1.1em;
+    }
+    
+    .reference {
+        margin-left: 15px;
+    }
 }
 
 @media screen and (max-width: 480px) {
