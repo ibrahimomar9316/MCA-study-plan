@@ -664,4 +664,38 @@ cards.forEach(card => {
         card.style.transform = 'translateY(0)';
         card.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
     });
+});
+
+// Prior Knowledge Modal Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the modal
+    const modal = document.getElementById('priorKnowledgeModal');
+    const closeBtn = document.querySelector('.close-modal');
+    
+    // Add click event to "Quick Prior Knowledge Check" link
+    const priorKnowledgeLink = document.querySelector('a[href="#prior-knowledge"]');
+    if (priorKnowledgeLink) {
+        priorKnowledgeLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            modal.style.display = 'block';
+        });
+    }
+    
+    // Close modal when clicking the X
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+    
+    // Close modal when clicking outside
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+    
+    // Keep progress bar visible
+    const progressSummary = document.querySelector('.progress-summary');
+    if (progressSummary) {
+        progressSummary.style.display = 'block';
+    }
 }); 
