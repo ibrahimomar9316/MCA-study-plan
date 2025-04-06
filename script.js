@@ -497,61 +497,61 @@ function updateOverallProgress() {
 }
 
 // Progress Tracking
-const totalDays = 8;
-let completedDays = 0;
+const totalSessions = 24; // 8 days × 3 sessions per day
+let completedSessions = 0;
 
-// Load saved progress
 function loadProgress() {
     const savedProgress = localStorage.getItem('studyProgress');
     if (savedProgress) {
         const progress = JSON.parse(savedProgress);
-        progress.forEach(day => {
-            const checkbox = document.querySelector(`input[data-day="${day}"]`);
+        Object.keys(progress).forEach(session => {
+            const checkbox = document.querySelector(`input[data-session="${session}"]`);
             if (checkbox) {
-                checkbox.checked = true;
-                checkbox.closest('.progress-tracker').classList.add('completed');
-                completedDays++;
+                checkbox.checked = progress[session];
+                if (progress[session]) {
+                    completedSessions++;
+                    checkbox.closest('.session-content').classList.add('completed');
+                }
             }
         });
         updateProgressBar();
     }
 }
 
-// Save progress
 function saveProgress() {
-    const checkboxes = document.querySelectorAll('.progress-tracker input[type="checkbox"]:checked');
-    const completedDays = Array.from(checkboxes).map(checkbox => parseInt(checkbox.dataset.day));
-    localStorage.setItem('studyProgress', JSON.stringify(completedDays));
+    const progress = {};
+    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+        progress[checkbox.dataset.session] = checkbox.checked;
+    });
+    localStorage.setItem('studyProgress', JSON.stringify(progress));
     updateProgressBar();
 }
 
-// Update progress bar
 function updateProgressBar() {
-    const progressFill = document.getElementById('progressFill');
-    const progressText = document.getElementById('progressText');
-    const percentage = (completedDays / totalDays) * 100;
-    
-    progressFill.style.width = `${percentage}%`;
-    progressText.textContent = `${Math.round(percentage)}% Complete`;
+    const percentage = (completedSessions / totalSessions) * 100;
+    document.getElementById('progressFill').style.width = `${percentage}%`;
+    document.getElementById('progressText').textContent = `${Math.round(percentage)}% Complete`;
 }
 
 // Add event listeners to checkboxes
-document.querySelectorAll('.progress-tracker input[type="checkbox"]').forEach(checkbox => {
-    checkbox.addEventListener('change', () => {
-        const tracker = checkbox.closest('.progress-tracker');
-        if (checkbox.checked) {
-            tracker.classList.add('completed');
-            completedDays++;
+document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+        const sessionContent = this.closest('.session-content');
+        if (this.checked) {
+            completedSessions++;
+            sessionContent.classList.add('completed');
         } else {
-            tracker.classList.remove('completed');
-            completedDays--;
+            completedSessions--;
+            sessionContent.classList.remove('completed');
         }
         saveProgress();
     });
 });
 
 // Load progress when page loads
-document.addEventListener('DOMContentLoaded', loadProgress);
+document.addEventListener('DOMContentLoaded', function() {
+    loadProgress();
+});
 
 function showKnowledge(key) {
     const modal = document.getElementById('knowledgeModal');

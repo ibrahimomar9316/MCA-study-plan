@@ -135,36 +135,144 @@ section h2 {
 /* Timeline */
 .timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--primary-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
 }
 
 .timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.5s ease;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    transform: translateX(100px);
+}
+
+.timeline-item.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.timeline-content {
+    padding: 20px;
     background-color: var(--card-background);
-    padding: 2rem;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Daily Schedule Styles */
+.day-schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.session {
+    background-color: #f8f9fa;
     border-radius: 10px;
-    box-shadow: var(--shadow);
-    margin-bottom: 2rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: var(--transition);
 }
 
-.timeline-item:hover {
-    transform: translateX(10px);
+.session:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.timeline-item h3 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.timeline-content h4 {
+.session h4 {
     color: var(--secondary-color);
-    margin: 1rem 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 
-.timeline-content ul {
-    list-style-position: inside;
-    margin-left: 1rem;
+.session-content {
+    padding-left: 1rem;
+}
+
+.session-content p {
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.session-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.session-content ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.session-content ul li:before {
+    content: "•";
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+}
+
+.progress-tracker {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.progress-tracker label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.progress-tracker label:hover {
+    color: var(--accent-color);
+}
+
+.progress-tracker input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+/* Timeline Item Updates */
+.timeline-item {
+    margin-bottom: 2rem;
+}
+
+.timeline-content {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.timeline-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
 }
 
 /* Footer */
