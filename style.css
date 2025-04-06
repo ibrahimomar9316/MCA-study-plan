@@ -1,266 +1,194 @@
-:root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
-    --background-color: #f5f6fa;
-    --text-color: #2c3e50;
-    --card-background: #ffffff;
-    --shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    padding: 10px;
+    background: #f5f6fa;
+    color: #2c3e50;
+    line-height: 1.4;
+    padding: 8px;
 }
 
 .container {
     max-width: 100%;
     margin: 0 auto;
-    padding: 10px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 12px;
 }
 
 header {
     text-align: center;
-    padding: 15px 0;
-    margin-bottom: 20px;
+    padding: 8px 0;
+    margin-bottom: 16px;
     border-bottom: 1px solid #eee;
 }
 
 h1 {
-    font-size: 24px;
-    color: var(--primary-color);
-    margin-bottom: 5px;
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 4px;
 }
 
-.subtitle {
+header p {
     color: #666;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 h2 {
-    font-size: 20px;
-    color: var(--primary-color);
-    margin: 20px 0 15px;
-    padding-bottom: 5px;
+    font-size: 18px;
+    color: #2c3e50;
+    margin: 16px 0 12px;
+    padding-bottom: 4px;
     border-bottom: 1px solid #eee;
 }
 
 h3 {
-    font-size: 18px;
-    color: var(--primary-color);
-    margin: 15px 0 10px;
+    font-size: 16px;
+    color: #2c3e50;
+    margin: 12px 0 8px;
 }
 
 h4 {
-    font-size: 16px;
-    color: var(--primary-color);
-    margin: 10px 0 5px;
-    padding: 8px;
-    background-color: #f8f9fa;
-    border-radius: 4px;
+    font-size: 14px;
+    color: #2c3e50;
+    margin: 8px 0 4px;
+    padding: 4px 8px;
+    background: #f8f9fa;
+    border-radius: 2px;
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 
 .card {
-    background-color: var(--card-background);
-    padding: 15px;
-    border-radius: 6px;
-    box-shadow: var(--shadow);
-    margin-bottom: 15px;
+    background: white;
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    margin-bottom: 12px;
 }
 
 .card h3 {
-    color: var(--secondary-color);
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid var(--secondary-color);
+    color: #3498db;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #3498db;
 }
 
 .card ul {
     list-style-position: inside;
-    margin: 10px 0;
-    padding-left: 15px;
+    margin: 8px 0;
+    padding-left: 12px;
 }
 
-.schedule-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.card ul li {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+.references {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #eee;
+}
+
+.references a {
+    color: #3498db;
+    text-decoration: none;
+    display: block;
+    margin: 4px 0;
+    font-size: 12px;
 }
 
 .day-card {
-    background-color: var(--card-background);
-    padding: 15px;
-    border-radius: 6px;
-    box-shadow: var(--shadow);
+    background: white;
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    margin-bottom: 12px;
 }
 
 .session {
-    background-color: #f8f9fa;
-    border-radius: 4px;
-    padding: 10px;
-    margin-bottom: 10px;
+    background: #f8f9fa;
+    border-radius: 2px;
+    padding: 8px;
+    margin-bottom: 8px;
 }
 
-.session-content {
-    padding-left: 10px;
-    margin-top: 5px;
+.session p {
+    margin: 4px 0;
+    font-size: 14px;
 }
 
-.session-content p {
-    margin: 5px 0;
-}
-
-.session-content ul {
+.session ul {
     list-style-type: none;
     padding-left: 0;
-    margin: 5px 0;
+    margin: 4px 0;
 }
 
-.session-content li {
-    margin: 3px 0;
-    font-size: 14px;
-}
-
-.reference {
-    margin: 5px 0;
-    font-size: 12px;
-    color: #666;
-}
-
-.reference a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    display: block;
+.session ul li {
     margin: 2px 0;
+    font-size: 13px;
+    padding-left: 16px;
+    position: relative;
 }
 
-.file-info {
-    font-size: 11px;
-    color: #888;
-    margin-top: 2px;
-}
-
-.progress-summary {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    background: white;
-    padding: 10px;
-    border-radius: 6px;
-    box-shadow: var(--shadow);
-    min-width: 150px;
-    z-index: 1000;
-}
-
-.progress-summary h3 {
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-.progress-bar {
-    width: 100%;
-    height: 4px;
-    background: #eee;
-    border-radius: 2px;
-    margin: 5px 0;
-    overflow: hidden;
-}
-
-.progress-fill {
-    height: 100%;
-    background: var(--secondary-color);
-    width: 0;
-    transition: width 0.3s ease;
-}
-
-#progressText {
-    text-align: center;
-    font-size: 12px;
-    opacity: 0.9;
+.session ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #3498db;
 }
 
 @media screen and (max-width: 480px) {
     body {
-        padding: 5px;
+        padding: 4px;
     }
 
     .container {
-        padding: 5px;
+        padding: 8px;
     }
 
     h1 {
-        font-size: 20px;
-    }
-
-    h2 {
         font-size: 18px;
     }
 
-    h3 {
+    h2 {
         font-size: 16px;
     }
 
+    h3 {
+        font-size: 15px;
+    }
+
     h4 {
-        font-size: 14px;
-        padding: 6px;
+        font-size: 13px;
+        padding: 3px 6px;
     }
 
     .card, .day-card {
-        padding: 10px;
+        padding: 8px;
     }
 
     .session {
-        padding: 8px;
+        padding: 6px;
     }
 
-    .session-content {
-        padding-left: 5px;
-    }
-
-    .session-content li {
+    .session p {
         font-size: 13px;
     }
 
-    .reference {
-        font-size: 11px;
-    }
-
-    .file-info {
-        font-size: 10px;
-    }
-
-    .progress-summary {
-        bottom: 5px;
-        right: 5px;
-        padding: 8px;
-        min-width: 120px;
-    }
-
-    .progress-summary h3 {
+    .session ul li {
         font-size: 12px;
     }
 
-    .progress-bar {
-        height: 3px;
-    }
-
-    #progressText {
+    .references a {
         font-size: 11px;
     }
 } 
