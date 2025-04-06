@@ -220,7 +220,7 @@ section h2 {
 }
 
 .session-content ul li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     padding-left: 1.5rem;
     position: relative;
 }
@@ -438,6 +438,38 @@ footer {
 
 .practice-problems p {
     margin-bottom: 0.5rem;
+}
+
+/* Reference Styles */
+.reference {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.reference a {
+    color: var(--accent-color);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+}
+
+.reference a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.reference a::before {
+    content: "📄";
+    font-size: 1rem;
+}
+
+.file-info {
+    color: #666;
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
 }
 
 /* Responsive Design */
