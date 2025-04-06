@@ -21,6 +21,8 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     padding: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -43,6 +45,7 @@ h1 {
     font-size: 28px;
     color: var(--primary-color);
     margin-bottom: 10px;
+    line-height: 1.2;
 }
 
 .subtitle {
